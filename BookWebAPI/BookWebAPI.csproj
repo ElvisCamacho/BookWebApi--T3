@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Bruger\Desktop\BookWebAPI-T3\BookWebAPI\BookWebAPI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BookClassLibrary\BookClassLibrary\BookClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BookClassLibrary">
+      <HintPath>..\..\BookClassLibrary -T1\BookClassLibrary\bin\Debug\netcoreapp3.1\BookClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>
